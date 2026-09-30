@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Nanum+Pen+Script&display=swap');
+
 body{
   font-size: 14px;
 }
@@ -9,7 +11,9 @@ header, main, footer{
 }
 
 h1 {
-  /* font-size: 5em; */
+  font-size: 3em;
+  font-family: "Black Han Sans", sans-serif;
+  font-waight: normal;
   color: green;
   background-color: lightpink;
   border: solid 2px red; 
@@ -35,14 +39,22 @@ article[id="m2"] {
   color: blue;
 }
 
-div::before{
+article div::before{
   content: '[영화 소개] ';
   font-weight: 900;
 }
-div::after{
+article div::after{
   content: ' (더보기)';
   font-style: italic;
   color: darkgreen;
+}
+
+article div{
+  font-family: "Nanum Pen Script", serif;
+  font-size: 1.5em;
+  background-color: lightgray;
+  padding: 15px 5px 10px 5px;
+  margin-bottom: 20px;
 }
 
 a{
@@ -59,6 +71,16 @@ a:hover{
 }
 
 a:active{
-  background-color: barkred;
+  background-color: rgba(167, 255, 167);
   color: white;
+}
+
+article:nth-child(2){
+  background-color: lightgreen;
+}
+
+h3{
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 1.5em;
+  font-variant: small-caps;
 }
